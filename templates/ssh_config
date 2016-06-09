@@ -1,4 +1,2 @@
-host git1
-hostname github.com
-user git
-
+host gitlab.kni.uek.krakow.pl
+  port 2222
