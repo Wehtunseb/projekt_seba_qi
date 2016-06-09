@@ -20,8 +20,8 @@
       become: yes
     - name: "synchronize repository"
       git:
-        repo: http://gitlab.kni.uek.krakow.pl/Wehtunseb/latajacy_klon.git
-        dest: ~/photoAlbumUi
+        repo: http://github.com/Wehtunseb/latajacy_klon.git
+        dest: ~/mocorz
         accept_hostkey: true
 
 - hosts: webui
@@ -36,8 +36,8 @@
       become: yes
     - name: "synchronize repository"
       git:
-        repo: http://gitlab.kni.uek.krakow.pl/Wehtunseb/latajacy_klon.git
-        dest: ~/photoAlbumUi
+        repo: http://github.com/Wehtunseb/latajacy_klon.git
+        dest: ~/mocorz
         accept_hostkey: true
 
 - hosts: pdf
@@ -60,6 +60,6 @@
       become: yes
     - name: "synchronize repository"
       git:
-        repo: http://gitlab.kni.uek.krakow.pl/Wehtunseb/kreowanie_pdf.git
-        dest: ~/photoAlbumCreator
+        repo: http://github.com/Wehtunseb/kreowanie_pdf.git
+        dest: ~/pdf
         accept_hostkey: true
